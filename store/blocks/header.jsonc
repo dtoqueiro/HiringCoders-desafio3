@@ -20,20 +20,23 @@
       "verticalAlign": "center",
       "preventHorizontalStretch": true,
       "preventVerticalStretch": true,
-      "fullWidth": true
+      "fullWidth": false,
+      "blockClass": "header"
     },
     "children": [
       "flex-layout.col#logo-desktop",
       "flex-layout.col#spacer",
-      "search-bar",
       "minicart.v2"
     ]
   },
   "flex-layout.col#spacer": {
     "props": {
+      "horizontalAlign": "center",
       "width": "grow"
-    }
+    },
+    "children": ["search-bar"]
   },
+
   "flex-layout.col#logo-desktop": {
     "props": {
       "verticalAlign": "middle"
