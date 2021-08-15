@@ -6,9 +6,7 @@
     "blocks": ["header-layout.desktop", "header-layout.mobile"]
   },
   "header-layout.desktop": {
-    "children": [
-      "sticky-layout#desktop"
-    ]
+    "children": ["sticky-layout#desktop"]
   },
   "sticky-layout#desktop": {
     "props": {
@@ -28,8 +26,6 @@
       "flex-layout.col#logo-desktop",
       "flex-layout.col#spacer",
       "search-bar",
-      "locale-switcher",
-      "login",
       "minicart.v2"
     ]
   },
@@ -48,7 +44,7 @@
     "props": {
       "title": "Logo",
       "href": "/",
-      "url": "https://brand.vtex.com/static/media/VTEX_pink_RGB.751a9fb5.svg",
+      "url": "https://hiringcoders2021.vtexassets.com/assets/vtex.file-manager-graphql/images/2268c146-1759-4f1b-acc1-cfc9b066ab56___2f7853b5b7e7dcb5b4ef8f4db6868e01.png",
       "width": "80"
     }
   },
@@ -59,13 +55,7 @@
     "children": ["flex-layout.row#mobile"]
   },
   "flex-layout.row#mobile": {
-    "children": [
-      "drawer",
-      "logo",
-      "flex-layout.col#spacer",
-      "login",
-      "minicart.v2"
-    ],
+    "children": ["drawer", "logo", "flex-layout.col#spacer", "minicart.v2"],
     "props": {
       "blockClass": "main-header-mobile",
       "preventHorizontalStretch": true,
@@ -75,5 +65,14 @@
   },
   "drawer": {
     "children": []
+  },
+  "search-bar": {
+    "blocks": ["autocomplete-result-list.v2"],
+    "props": {
+      "openAutocompleteOnFocus": true
+    }
+  },
+  "autocomplete-result-list.v2": {
+    "blocks": ["product-summary"]
   }
 }
