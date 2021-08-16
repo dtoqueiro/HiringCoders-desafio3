@@ -1,4 +1,5 @@
-.flexRow--header {
+.flexRow--header,
+.flexRowContent--main-header-mobile {
   background-color: #212121;
 }
 
