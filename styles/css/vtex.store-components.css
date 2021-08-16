@@ -1,6 +1,7 @@
 .logoImage {
   width: 100%;
   max-width: 150px;
+  align-self: flex-end;
 }
 .searchIcon {
   color: #ffffff;
