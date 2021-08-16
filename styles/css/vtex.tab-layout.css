@@ -1,6 +1,20 @@
 .listContainer {
   background: #212121;
 }
+.listContainer--home-scroll {
+  background: #212121;
+  overflow: hidden;
+  overflow-x: scroll;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  scroll-behavior: smooth;
+}
+.listContainer::-webkit-scrollbar {
+  display: none;
+}
+.listItem {
+  transition: all ease-in-out 0.5s;
+}
 .listItemActive {
   border-bottom: 2px solid #59ff00;
 }

@@ -1,7 +1,19 @@
 {
   "store.home": {
-    "blocks": ["tab-layout#home"]
+    "blocks": ["responsive-layout.desktop", "responsive-layout.mobile"]
   },
+  "responsive-layout.desktop": {
+    "children": ["flex-layout.row#home-desktop"]
+  },
+  "flex-layout.row#home-desktop": {
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "fullWidth": true
+    },
+    "children": ["tab-layout#home"]
+  },
+
   "tab-layout#home": {
     "children": ["tab-list#home", "tab-content#home"]
   },
@@ -96,6 +108,35 @@
       "text": "Área do conteúdo da tab-list.item com  tabId = palmeiras",
       "textPosition": "CENTER",
       "font": "t-heading-3"
+    }
+  },
+  /*
+   *   Layout Mobile
+   *   Tab Layout com efeito de Scroll Horizontal
+   */
+  "responsive-layout.mobile": {
+    "children": ["flex-layout.row#home-scroll"]
+  },
+  "flex-layout.row#home-scroll": {
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "fullWidth": true
+    },
+    "children": ["tab-layout#home-scroll"]
+  },
+  "tab-layout#home-scroll": {
+    "children": ["tab-list#home-scroll", "tab-content#home"]
+  },
+  "tab-list#home-scroll": {
+    "children": [
+      "tab-list.item#home0",
+      "tab-list.item#home1",
+      "tab-list.item#home2",
+      "tab-list.item#home3"
+    ],
+    "props": {
+      "blockClass": "home-scroll"
     }
   }
 }
