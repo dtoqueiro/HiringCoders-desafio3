@@ -8,3 +8,10 @@
   align-items: center;
   justify-content: center;
 }
+
+.flexColChild--logo-container {
+  width: 10vw;
+}
+.flexColChild--cart-container {
+  width: 10vw;
+}
