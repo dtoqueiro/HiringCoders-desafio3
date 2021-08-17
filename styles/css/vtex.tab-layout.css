@@ -1,8 +1,8 @@
 .listContainer {
   background: #212121;
+  height: 4rem;
 }
 .listContainer--home-scroll {
-  background: #212121;
   overflow: hidden;
   overflow-x: scroll;
   flex-wrap: nowrap;

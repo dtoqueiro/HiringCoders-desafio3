@@ -52,6 +52,7 @@
   },
   "tab-content#home": {
     "children": [
+      "slider-layout#home-banner",
       "tab-content.item#home0",
       "tab-content.item#home1",
       "tab-content.item#home2",
@@ -108,6 +109,36 @@
       "text": "Área do conteúdo da tab-list.item com  tabId = palmeiras",
       "textPosition": "CENTER",
       "font": "t-heading-3"
+    }
+  },
+
+  "slider-layout#home-banner": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "fullWidth": false,
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "carousel"
+    },
+    "children": ["image#banner01", "image#banner02"]
+  },
+
+  "image#banner01": {
+    "props": {
+      "src": "assets/promo-banner01.jpg",
+      "maxHeight": "912",
+      "link": "/"
+    }
+  },
+  "image#banner02": {
+    "props": {
+      "src": "assets/promo-banner02.jpg",
+      "maxHeight": 912,
+      "link": "/"
     }
   },
   /*
