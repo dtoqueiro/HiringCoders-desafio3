@@ -6,3 +6,14 @@
 .searchIcon {
   color: #ffffff;
 }
+.searchBarContainer {
+  border: none;
+}
+
+:global(.vtex-input-prefix__group) {
+  border: none;
+  border-bottom: 1px solid #fff;
+}
+:global(.vtex-input-prefix__group):hover {
+  border-bottom: 2px solid #fff;
+}
